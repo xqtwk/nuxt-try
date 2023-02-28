@@ -25,6 +25,8 @@
   <NuxtPage/> <!-- Depends on what page you're visiting. URL/ will render index at this point of the page,
   URL/about will render about. -->
 
+  <!-- If don't want to use App.vue - just rename it to anything else, like aoigfdag.vue and nuxt will stop using it as "doorway"-->
+
     <Hello v-if="page == 'Hello'" />
   <LazyCounter v-if="page == 'Counter'" />  <!-- LAZY COMPONENT ONLY IMPORTED WHEN NEEDED-->
   <!-- <component :is="MyComponent" /> -->
