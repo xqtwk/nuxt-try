@@ -22,7 +22,8 @@
   <br/>
   <a href="#" @click="view('Counter')">Counter</a>
 
-  <NuxtPage/>
+  <NuxtPage/> <!-- Depends on what page you're visiting. URL/ will render index at this point of the page,
+  URL/about will render about. -->
 
     <Hello v-if="page == 'Hello'" />
   <LazyCounter v-if="page == 'Counter'" />  <!-- LAZY COMPONENT ONLY IMPORTED WHEN NEEDED-->
