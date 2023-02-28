@@ -8,7 +8,10 @@
   }
 </script>
 <template>
-  <button @click="increment">Increment</button>
-  <p>{{ count }}</p>
-  <button @click="decrement">Decrement</button>
+    <div>
+        <button @click="increment">Increment</button>
+        <p>{{ count }}</p>
+        <button @click="decrement">Decrement</button>
+    </div>
+
 </template>
